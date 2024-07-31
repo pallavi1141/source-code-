@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css exercise 5</title>
+    <style>
+      .card {
+        width: 470px;
+        height: 520px;
+        background-color: white;
+        margin: 50px auto;
+        border-radius: 8px;
+        border: 2px solid black;
+        position: relative;
+      }
+      body {
+        background-color: rgba(0, 0, 0, 0.822);
+      }
+      .card .nav {
+        height: 40px;
+        border: 2px solid black;
+        background-color: rgb(237, 185, 164);
+        text-align: center;
+        font-size: 25px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: black;
+      }
+      .nav:hover {
+        color: white;
+        background-color: rgba(250, 128, 114, 0.772);
+      }
+      .card .container {
+        width: 450px;
+        height: 230px;
+        background-color: rgba(128, 128, 128, 0.466);
+        margin: 0 auto;
+      }
+
+      .card .container .box {
+        width: 160px;
+        height: 160px;
+        background-color: rgb(115, 115, 241);
+      }
+      .box {
+        margin: 40px 28px auto;
+        display: inline-flex;
+      }
+      .card .title {
+        width: 380px;
+        height: 80px;
+        border: 2px solid black;
+        margin: 5px auto;
+        border-radius: 20px;
+        background-color: chocolate;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+      }
+      .title:hover {
+        background-color: orange;
+      }
+
+      .circle {
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+      }
+
+      .bar {
+        margin: 116px 0;
+        height: 40px;
+        border: 2px solid black;
+        background-color: rgb(27, 110, 110);
+        width: 470px;
+        /* border-radius: 8px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <nav class="nav">Welcome to My Website</nav>
+      </header>
+      <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="title">
+        This a is simple and basic template of web site. In which used html and
+        css only.
+      </div>
+      <svg class="circle" width="100" height="100">
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke="black"
+          stroke-width="3"
+          fill="red"
+        />
+        <image
+          x="30"
+          y="30"
+          width="40"
+          height="40"
+          href="https://www.svgrepo.com/show/361181/github.svg"
+        />
+      </svg>
+      <footer>
+        <nav class="bar"></nav>
+      </footer>
+    </div>
+  </body>
+</html>
